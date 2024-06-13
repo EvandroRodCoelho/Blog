@@ -1,0 +1,48 @@
+@import "../../styles/base/variable";
+.header {
+  background-color: $dark-20;
+  min-height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 64px 0px 64px 0px;
+  gap: 48px;
+  border: 0px 0px 2px 0px;
+  opacity: 0px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex:1;
+  }
+  &__title {
+    width: 100%;
+    flex:1;
+    align-items: center;
+  }
+
+  &__input {
+    width: 100%;
+    input {
+      width: 50%;
+      height: 56px;
+      background-color: $dark-30;
+      color: white;
+      padding: 16px 24px 16px 24px;
+      opacity: 0px;
+      outline: 0;
+      border: 2px solid #252529;
+      border-radius: 5px;
+      font-family: $font-inter;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24.2px;
+    }
+  }
+}
+
+
+span {
+  color: $dark-60;
+}
