@@ -1,0 +1,30 @@
+@import '../base/varibels';
+
+.main-title {
+  font-family: $font-space-grotesk;
+  font-weight: 500;
+  size: 40px;
+  line-height: 51.04px;
+}
+
+.title-blog {
+  font-family: $font-inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30.62px;
+  color: $dark-60;
+}
+
+.description {
+  font-family: $font-inter;
+  font-size: 20px;
+  line-height: 32px;
+  color:$dark-50;
+}
+
+.data {
+  font-family: $font-inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px
+}

@@ -1,0 +1,17 @@
+@import './varibels';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: $font-inter;
+}
+
+body {
+  line-height: 1.6;
+}
