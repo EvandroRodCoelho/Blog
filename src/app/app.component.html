@@ -2,8 +2,7 @@
   <app-header></app-header>
   <div class="app__cards-blog">
     <div class="container">
-      <app-card-blog></app-card-blog>
-      <app-card-blog></app-card-blog>
+      <app-card-blog [data]="post" *ngFor="let post of data"></app-card-blog>
     </div>
   </div>
 </div>

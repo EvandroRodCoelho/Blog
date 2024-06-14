@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { timeout } from 'rxjs';
+import { IPost } from '../../interfaces/IPost';
+
 
 @Component({
   selector: 'app-card-blog',
@@ -7,9 +9,13 @@ import { timeout } from 'rxjs';
   styleUrl: './card-blog.component.scss'
 })
 export class CardBlogComponent {
-  isLiked = false;
+  @Input() data: IPost = {} as IPost;
+
+  isLiked = this.data.isLiked;
+
 
   toggleLike() {
-    this.isLiked = !this.isLiked;
+    this.data.isLiked = !this.data.isLiked;
+    console.log(this.data.isLiked)
   }
 }
