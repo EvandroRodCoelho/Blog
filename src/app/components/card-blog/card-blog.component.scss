@@ -1,0 +1,51 @@
+@import ".././../styles/base/variable";
+.card-blog {
+  padding: 40px;
+  width: 100%;
+  background-color: $dark-20;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+     margin-top: 20px;
+    .description {
+      margin-top: 16px;
+    }
+  }
+}
+.liked {
+  border: 2px solid $brand-color;
+}
+#icon {
+  fill: $dark-10;
+  stroke: $brand-color;
+  stroke-width: 7px;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+#icon.filled,
+#icon:hover {
+  fill: $brand-color;
+}
+
+svg:hover {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+

@@ -1,4 +1,18 @@
 @import "./styles/base/variable";
 .app {
   background-color: $dark-10;
+
+  &__cards-blog {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 40px 0;
+      width: 50%;
+    }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
