@@ -1,8 +1,8 @@
 <div class="app">
-  <app-header></app-header>
+  <app-header (filterChange)="onFilter($event)"></app-header>
   <div class="app__cards-blog">
     <div class="container">
-      <app-card-blog [data]="post" *ngFor="let post of data"></app-card-blog>
+      <app-card-blog [data]="post" *ngFor="let post of filteredData"></app-card-blog>
     </div>
   </div>
 </div>

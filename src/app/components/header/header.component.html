@@ -1,9 +1,11 @@
+html
+Copiar código
 <header class="header">
   <div class="header__title">
     <h1 class="main-title">Code<span>Lab</span></h1>
   </div>
 
   <div class="header__input">
-    <input type="text" placeholder="Pesquisar no blog">
+    <input type="text" [(ngModel)]="value" (ngModelChange)="onFilter($event)" placeholder="Pesquisar no blog">
   </div>
 </header>

@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Output() filterChange = new EventEmitter<string>();
+  value = '';
 
+  onFilter(newValue: string): void {
+    console.log(newValue)
+    this.filterChange.emit(newValue);
+  }
 }
