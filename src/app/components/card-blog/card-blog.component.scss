@@ -49,3 +49,14 @@ svg:hover {
 }
 
 
+@media (max-width: 426px) {
+  .card-blog {
+    padding: 32px 24px 32px 24px;
+    gap: 20px;
+    border-radius: 8px 0px 0px 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+
+}

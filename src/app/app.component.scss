@@ -6,13 +6,35 @@
     .container {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 40px;
       margin: 40px 0;
       width: 50%;
+      max-width: 1261px;
     }
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 1025px) {
+  .app {
+    &__cards-blog  {
+      padding: 64px 32px 64px 32px;
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .app {
+    &__cards-blog {
+      padding: 48px 24px 48px 24px;
+      .container {
+        width: 100%;
+      }
+    }
   }
 }

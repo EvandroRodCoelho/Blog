@@ -46,3 +46,42 @@
 span {
   color: $dark-60;
 }
+
+
+@media (max-width: 1025px) {
+  .header {
+    width:100%;
+    height: Hug (283px)px;
+    padding: 64px 32px 64px 32px;
+    gap: 48px;
+    border: 0px 0px 2px 0px;
+    opacity: 0px;
+
+    &__input {
+      width: 100%;
+      input {
+        width: 100%;
+        padding: 16px 24px 16px 24px;
+        gap: 12px;
+        border-radius: 8px 0px 0px 0px;
+        border: 2px 0px 0px 0px;
+        opacity: 0px;
+        max-width: 1261px;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .header {
+    padding: 48px 24px 48px 24px;
+    gap: 32px;
+    border: 0px 0px 2px 0px;
+    opacity: 0px;
+
+    &__input {
+      width: 100%;
+    }
+  }
+
+}
