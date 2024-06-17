@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/code-lab",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -151,6 +151,9 @@
               "devServerTarget": "CodeLab:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
